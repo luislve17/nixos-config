@@ -3,9 +3,10 @@
 {
   # Main imports
   imports = [
+    ../../modules/system/devtools.nix
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/kitty.nix
-    ../../modules/system/devtools.nix
+    ../../modules/home-manager/zsh.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
