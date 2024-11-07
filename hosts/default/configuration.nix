@@ -96,8 +96,13 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # # Enable zsh
+  # Enable zsh
   programs.zsh.enable = true;
+
+  # Enable hyprland
+  programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

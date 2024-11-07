@@ -8,7 +8,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "kanagawa";
+      theme = "catppuccin_mocha";
       editor = {
         line-number = "absolute";
         mouse = true;

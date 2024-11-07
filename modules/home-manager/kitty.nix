@@ -12,6 +12,7 @@
     settings = {
       confirm_os_window_close = 0;
       enable_audio_bell = false;
+      cursor_shape = "block";
     };
     themeFile = "Catppuccin-Mocha";
   };

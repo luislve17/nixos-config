@@ -4,9 +4,11 @@
   # Main imports
   imports = [
     ../../modules/system/devtools.nix
+    ../../modules/system/general.nix
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/kitty.nix
     ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/hyprland.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
