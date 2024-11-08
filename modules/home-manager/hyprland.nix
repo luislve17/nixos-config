@@ -13,7 +13,20 @@
       };
       "$terminal" = "kitty";
       "$mainMod" = "SUPER";
-      "$browser" = "firefox";
+      "$browser" = "floorp";
+
+      animations = {
+        enabled = "yes";
+        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+        animation = [
+          "windows, 1, 5, myBezier"
+          "windowsOut, 1, 7, default, popin 80%"
+          "border, 1, 10, default"
+          "fade, 1, 7, default"
+          "workspaces, 1, 10, myBezier, fade"
+        ];
+      };
+
       bind = [
   			# Bind volume keys on laptops
   			", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
