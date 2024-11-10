@@ -4,6 +4,9 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
+      exec-once = [
+        "${pkgs.hyprpaper}/bin/hyprpaper"
+      ];
     	"monitor" = [
         ",1920x1080,auto,1,bitdepth,8"
         ",preferred,auto,1,mirror,eDP-1,bitdepth,8"

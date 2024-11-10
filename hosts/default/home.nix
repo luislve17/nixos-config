@@ -10,6 +10,7 @@
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/pfetch.nix
+    ../../modules/home-manager/hyprpaper.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
