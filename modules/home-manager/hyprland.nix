@@ -19,6 +19,15 @@
       "$mainMod" = "SUPER";
       "$browser" = "floorp";
 
+      input = {
+        repeat_rate = 50;
+        repeat_delay = 300;
+        touchpad = {
+          natural_scroll = true;
+          scroll_factor = 0.5;
+        };
+      };
+
       animations = {
         enabled = "yes";
         bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
@@ -62,9 +71,6 @@
   			"$mainMod, Q, exit,"
   			"$mainMod, V, togglefloating,"
 			
-  			# Bind to reload waybar
-  			# "$mainMod, Z, exec, kill $(pidof waybar) && waybar"
-			
   			# Move focus with mainMod + arrow keys
   			"$mainMod, left, movefocus, l"
   			"$mainMod, right, movefocus, r"
@@ -97,6 +103,17 @@
 
         "Alt_L&Control_L&Shift_L, right, movetoworkspace, e+1"
         "Alt_L&Control_L&Shift_L, left, movetoworkspace, e-1"
+
+        "$mainMod&Control_L, up, resizeactive, 0 -20"
+        "$mainMod&Control_L, down, resizeactive, 0 20"
+        "$mainMod&Control_L, left, resizeactive, -20 0"
+        "$mainMod&Control_L, right, resizeactive, 20 0"
+
+        "$mainMod&Shift_L, up, movewindow, u"
+        "$mainMod&Shift_L, down, movewindow, d"
+        "$mainMod&Shift_L, left, movewindow, l"
+        "$mainMod&Shift_L, right, movewindow, r"
+
   		];
     };
   };
