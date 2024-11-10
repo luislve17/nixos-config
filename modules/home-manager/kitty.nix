@@ -7,7 +7,7 @@
     enable = true;
     font = {
       name = "FiraCode Nerd Font Mono";
-      size = 12;
+      size = 14;
     };
     settings = {
       confirm_os_window_close = 0;

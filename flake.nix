@@ -14,6 +14,8 @@
       url = "github:hyprwm/Hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+
+    xremap-flake.url = "github:xremap/nix-flake";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {

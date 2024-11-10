@@ -8,6 +8,7 @@
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    inputs.xremap-flake.nixosModules.default
   ];
 
   fonts.packages = with pkgs; [
@@ -50,11 +51,24 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "";
-    options = "caps:escape";
   };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  services.xremap = {
+    enable = true;
+    withWlroots = true;
+    userName = "luis";
+    config = {
+      modmap = [{
+        name = "CapstoEsc";
+        remap = {
+          "CapsLock" = "ESC";
+        };
+      }];
+    };
+  };
 
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;

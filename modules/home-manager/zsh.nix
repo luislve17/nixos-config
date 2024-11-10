@@ -7,9 +7,12 @@
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    initExtra = ''
+      pfetch
+    '';
     oh-my-zsh = {
       enable = true;
-      theme = "robbyrussell";
+      theme = "gallifrey";
       plugins = [
         "git"
       ];
