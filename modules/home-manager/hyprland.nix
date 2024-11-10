@@ -6,6 +6,7 @@
     settings = {
       exec-once = [
         "${pkgs.hyprpaper}/bin/hyprpaper"
+        "${pkgs.waybar}/bin/waybar"
       ];
     	"monitor" = [
         ",1920x1080,auto,1,bitdepth,8"
@@ -28,6 +29,20 @@
           "fade, 1, 7, default"
           "workspaces, 1, 10, myBezier, fade"
         ];
+      };
+
+      decoration = {
+        rounding = 10;
+        dim_inactive = true;
+        dim_strength = 0.4;
+        active_opacity = 0.9;
+        inactive_opacity = 0.8;
+        fullscreen_opacity = 0.9;
+        blur = {
+          enabled = true;
+          vibrancy = 0.9;
+          passes = 2;
+        };
       };
 
       bind = [
