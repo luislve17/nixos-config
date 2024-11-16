@@ -13,6 +13,7 @@
 
   fonts.packages = with pkgs; [
     (pkgs.nerdfonts.override {fonts = ["FiraCode"];})
+    pkgs.hermit
   ];
 
   # Bootloader.
@@ -93,7 +94,7 @@
   users.users.luis = {
     isNormalUser = true;
     description = "luis";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     shell = pkgs.zsh;
     packages = with pkgs; [
     #  thunderbird
@@ -155,4 +156,16 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
+
+  virtualisation.containers.enable = true;
+  virtualisation = {
+    docker = {
+      enable = true;
+      enableOnBoot = false;
+      autoPrune = {
+        enable = true;
+        dates = "monthly";
+      };
+    };
+  };
 }

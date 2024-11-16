@@ -17,7 +17,8 @@
       };
       "$terminal" = "kitty";
       "$mainMod" = "SUPER";
-      "$browser" = "floorp";
+      "$browser" = "firefox";
+      "$fileManager" = "nemo";
 
       input = {
         repeat_rate = 50;
@@ -67,6 +68,7 @@
   			"$mainMod, F, fullscreen"
   			"$mainMod, RETURN, exec, $terminal"
   			"$mainMod, B, exec, $browser"
+  			"$mainMod, L, exec, $fileManager"
   			"$mainMod, D, killactive,"
   			"$mainMod, Q, exit,"
   			"$mainMod, V, togglefloating,"

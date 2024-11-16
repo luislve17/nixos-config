@@ -5,5 +5,7 @@
     tree
     gnumake42
     delta
+    lazydocker
+    gopls
   ];
 }

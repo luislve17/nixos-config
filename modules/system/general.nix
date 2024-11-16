@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs;[
     brightnessctl
-    floorp # browser
+    nemo  # file manager
+    unzip
   ];
 }
