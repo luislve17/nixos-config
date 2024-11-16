@@ -5,5 +5,6 @@
     brightnessctl
     nemo  # file manager
     unzip
+    spotify
   ];
 }
