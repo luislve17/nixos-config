@@ -7,5 +7,6 @@
     delta
     lazydocker
     gopls
+    air
   ];
 }
