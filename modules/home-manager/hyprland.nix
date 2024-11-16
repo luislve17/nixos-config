@@ -55,6 +55,11 @@
         };
       };
 
+      misc = {
+        enable_swallow = true;
+        swallow_regex = "^(kitty)$";
+      };
+
       bind = [
   			# Bind volume keys on laptops
   			", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
