@@ -6,5 +6,6 @@
     nemo  # file manager
     unzip
     spotify
+    playerctl
   ];
 }

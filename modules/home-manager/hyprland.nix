@@ -65,6 +65,10 @@
   			", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
   			", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
   			", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+        # Bind media control keys
+  			"Alt_R, bracketleft, exec, playerctl previous"
+  			"Alt_R, bracketright, exec, playerctl next"
 			
   			# Bind brightness keys on laptops
   			", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
